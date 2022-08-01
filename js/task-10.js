@@ -19,7 +19,6 @@ function createBoxes(amount) {
   let height = 30;
   for (let i = 0; i < amount; i+= +step) {
       const boxEl = document.createElement('div')
-      boxEl.classList.add('block');
       boxEl.style.width = width + 'px';
       boxEl.style.height = height + 'px';
       boxEl.style.backgroundColor = getRandomHexColor();
