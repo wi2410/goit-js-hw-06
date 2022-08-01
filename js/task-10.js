@@ -38,10 +38,8 @@ btnCreate.addEventListener('click', () => {
 
 function destroyBoxes() {
   container.replaceChildren();
-};
-function inputClear() {
+
   numberEl.value = '';
 };
 
 btnDestroy.addEventListener('click', destroyBoxes);
-btnDestroy.addEventListener('click', inputClear);
