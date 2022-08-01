@@ -30,7 +30,7 @@ function createBoxes(amount) {
 };
 
 btnCreate.addEventListener('click', () => {
-  const amount = parseInt(numberEl.value,10);
+  const amount = Number(numberEl.value);
   if (maxValue >= amount >= minValue){
     createBoxes(amount);
   }
