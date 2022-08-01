@@ -17,7 +17,7 @@ function createBoxes(amount) {
   const elements = []
   let width = 30;
   let height = 30;
-  for (let i = 0; i < amount; i+= Number(step)) {
+  for (let i = 0; i < amount; i+= +step) {
       const boxEl = document.createElement('div')
       boxEl.classList.add('block');
       boxEl.style.width = width + 'px';
@@ -31,7 +31,7 @@ function createBoxes(amount) {
 };
 
 btnCreate.addEventListener('click', () => {
-  const amount = Number(numberEl.value);
+  const amount = +numberEl.value;
   if (maxValue >= amount >= minValue){
     createBoxes(amount);
   }
